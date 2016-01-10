@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modules WP Theme by Quadro Ideas | Documentation</title>
+	<style type="text/css" media="screen">
+		body {
+			font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   			font-weight: 300;
+   			font-size: 16px;
+   			line-height: 1.5;
+   			margin: 0;
+   			background: #f0f0f0;
+		}
+		.page-wrapper {
+			width: 76%;
+			margin: 0 auto;
+			padding: 60px;
+			background: #fff;
+			-webkit-box-shadow: 0 0 10px 0 #ddd;
+			box-shadow: 0 0 10px 0 #ddd;
+		}
+		p {
+			margin: 0 0 16px;
+		}
+		h1, h2, h3, h4, h5 {
+			margin: 25px 0 20px;
+			font-weight: bold;
+			display: block;
+		}
+		h1 { font-size: 34px; }
+		h2 { font-size: 32px; }
+		h3 { font-size: 30px; color: #888; margin-bottom: 30px; }
+		h4 { font-size: 20px; border-bottom: 2px solid; display: inline-block; }
+		h5 { font-size: 16px; text-transform: uppercase; margin-bottom: 5px; }
+		a {
+			color: #319f9b;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #000;
+			text-decoration: underline;
+		}
+		code,
+		pre {
+			display: block;
+			max-width: 640px;
+			margin: 0 auto 24px;
+			padding: 0px 15px 15px;
+			background: #f5f5f5;
+			border: 1px solid #eee;
+			white-space: pre-line;
+			font-family: Inconsolata, Consolas, Monaco, Lucida Console, monospace;
+			overflow: auto;
+		}
+		header {
+			border-bottom: 2px solid #dedede;
+			padding-bottom: 30px;
+		}
+		header h1, header h2 {
+			text-align: center;
+			margin: 0 0 10px;
+		}
+		header h2 {
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #888;
+		}
+		section {
+			padding: 50px 0;
+			border-bottom: 2px solid #dedede;
+		}
+		section > div {
+			margin-bottom: 60px;
+			padding-bottom: 40px;
+			border-bottom: 3px solid #eee;
+		}
+		.index {
+		}
+		.index ul {
+			list-style: none;
+			padding: 0;
+		}
+		.index ul a {
+			display: block;
+			color: #666;
+		}
+		.parentmenu {
+			margin-bottom: 5px;
+		}
+		.parentmenu > a {
+			padding: 10px 15px;
+			font-size: 20px;
+			background: #f5f5f5;
+		}
+		ul.submenu {
+			padding: 20px 20px 20px 40px;
+		}
+		ul.submenu a {
+			padding: 3px 0;
+			font-size: 15px;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="page-wrapper">
+
+		<header id="header" class="">
+			<h1>Modules WordPress Theme by Quadro Ideas</h1>
+			<h2>Documentation</h2>
+		</header><!-- /header -->
+
+		<section class="welcome">
+			<p><strong>Hi! Before we begin, thanks for purchasing this theme! We hope you enjoy working with it.</strong></p>
+			<p>In the following pages we'll cover the installation, setup and use of this theme, together with a reference to its special features. We tried to cover every important side of it, so we truly suggest you dig into it if you have doubts or difficulties. However, if you find yourself with no answers or have any question beyond the scope of this document, please feel free to post it in our support forum at <a href="http://quadroideas.com/support/">http://quadroideas.com/support/</a> and we'll get to it as soon as possible (allow for a 24hs period).</p>
+			<p>Happy blogging!</p>
+			<p><strong>Quadro Ideas</strong></p>
+		</section>
+
+		<section class="index">
+			<h3>Index Of Contents</h3>
+			<ul class="contents-menu">
+				<li class="parentmenu">
+					<a href="#getting-started" title="Getting Started">Getting Started</a>
+					<ul class="submenu">
+						<li><a href="#installing-theme" title="Installing Modules Theme">Installing Modules Theme</a></li>
+						<li><a href="#license-activation">License & Typekit Activation</a></li>
+						<li><a href="#installing-plugins" title="Installing Plugins">Installing Plugins</a></li>
+						<li><a href="#setup-menus" title="Setting up Menus">Setting up Menus</a></li>
+						<li><a href="#defining-homepage" title="Defining the Homepage">Defining the Homepage</a></li>
+						<li><a href="#setup-blog" title="Setting up a Blog">Setting up a Blog</a></li>
+						<li><a href="#importing-demos">Importing a Demo</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#theme-options" title="Theme Options Panel">Theme Options Panel</a>
+					<ul class="submenu">
+						<li><a href="#options-overview" title="Overview">Overview</a></li>
+						<li><a href="#general" title="General Options">General Options</a></li>
+						<li><a href="#layout" title="Layout Options">Layout Options</a></li>
+						<li><a href="#design" title="Design Options">Design Options</a></li>
+						<li><a href="#typography" title="Typography Options">Typography Options</a></li>
+						<li><a href="#social" title="Social Options">Social Options</a></li>
+						<li><a href="#advertising" title="Advertising Options">Advertising Options</a></li>
+						<li><a href="#portfolio" title="Portfolio Options">Portfolio Options</a></li>
+						<li><a href="#woocommerce" title="WooCommerce Options">WooCommerce Options</a></li>
+						<li><a href="#other-options" title="Other Options">Other Options</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#modules" title="Modules Modules">Modules Modules</a>
+					<ul class="submenu">
+						<li><a href="#modules-overview" title="Overview">Overview</a></li>
+						<li><a href="#modules-homepage" title="Creating a Homepage">Creating a Homepage</a></li>
+						<li><a href="#authors" title="Authors">Authors</a></li>
+						<li><a href="#blog-module" title="Blog">Blog</a></li>
+						<li><a href="#canvas" title="Canvas">Canvas</a></li>
+						<li><a href="#carousel" title="Carousel">Carousel</a></li>
+						<li><a href="#crelly-slider-module" title="Crelly Slider">Crelly Slider</a></li>
+						<li><a href="#featured" title="Featured Post">Featured Post</a></li>
+						<li><a href="#flash-news" title="Flash News">Flash News</a></li>
+						<li><a href="#image" title="Image">Image</a></li>
+						<li><a href="#insights" title="Insights">Insights</a></li>
+						<li><a href="#logos" title="Logos Roll">Logos Roll</a></li>
+						<li><a href="#magazine" title="Magazine">Magazine</a></li>
+						<li><a href="#portfolio-module" title="Portfolio">Portfolio</a></li>
+						<li><a href="#quote-posts-slider" title="Quote Posts Slider">Quote Posts Slider</a></li>
+						<li><a href="#services" title="Services">Services</a></li>
+						<li><a href="#posts-slider-module" title="Posts Slider">Posts Slider</a></li>
+						<li><a href="#slider-module" title="Slider">Slider</a></li>
+						<li><a href="#slogan" title="Slogan">Slogan</a></li>
+						<li><a href="#team" title="Team">Team</a></li>
+						<li><a href="#testimonials" title="Testimonials">Testimonials</a></li>
+						<li><a href="#tiled-display" title="Tiled Display">Tiled Display</a></li>
+						<li><a href="#video-posts-slider" title="Video Posts Slider">Video Posts Slider</a></li>
+						<li><a href="#modules-tabs" title="Modules Tabs">Modules Tabs</a></li>
+						<li><a href="#modules-wrapper" title="Modules Wrapper">Modules Wrapper</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#templates" title="Page Templates">Page Templates</a>
+					<ul class="submenu">
+						<li><a href="#page-default" title="Default Template">Default Page Template</a></li>
+						<li><a href="#left-sidebar" title="Left Sidebar">Left Sidebar Template</a></li>
+						<li><a href="#fullwidth" title="Fullwidth">Fullwidth Template</a></li>
+						<li><a href="#modular-template" title="Modular Template">Modular Template</a></li>
+						<li><a href="#landing-template" title="Landing Page Template">Landing Page Template</a></li>
+						<li><a href="#page-settings" title="Page Settings">Page Settings</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#page-styling" title="Page Styling">Page Styling</a>
+				</li>
+				<li class="parentmenu">
+					<a href="#posts-styling" title="Posts Styling">Posts Styling</a>
+				</li>
+				<li class="parentmenu">
+					<a href="#post-formats" title="Post Formats">Post Formats</a>
+				</li>
+				<li class="parentmenu">
+					<a href="#widgets" title="Widgets">Widgets</a>
+					<ul class="submenu">
+						<li><a href="#image-widget" title="Quadro Image Widget">Quadro Image Widget</a></li>
+						<li><a href="#recent-widget" title="Quadro Recent Posts Widget">Quadro Recent Posts Widget</a></li>
+						<li><a href="#featured-widget" title="Quadro Featured Post Widget">Quadro Featured Post Widget</a></li>
+						<li><a href="#video-widget" title="Quadro Video Widget">Quadro Video Widget</a></li>
+						<li><a href="#quadro-ads-widget">Quadro Ads Widget</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#plugins" title="Supported Plugins">Supported Plugins</a>
+					<ul class="submenu">
+						<li><a href="#page-builder-plugin" title="Page Builder by SiteOrigin">Page Builder by SiteOrigin</a></li>
+						<li><a href="#mega-menus-plugin" title="CF Mega Menus">CF Mega Menus</a></li>
+						<li><a href="#contact-form-plugins" title="Contact Form 7">Contact Form Plugins</a></li>
+						<li><a href="#crelly-slider-plugin" title="Crelly Slider">Crelly Slider</a></li>
+						<li><a href="#jetpack-plugin" title="Jetpack">Jetpack</a></li>
+					</ul>
+				</li>
+				<li class="parentmenu">
+					<a href="#advanced" title="Advanced Stuff">Advanced Stuff</a>
+					<ul class="submenu">
+						<li><a href="#action-hooks" title="Action Hooks">Action Hooks</a></li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+
+		<section class="contents">
+
+			<div id="getting-started">
+				
+				<h3>Getting Started</h3>
+				<p>Before we begin the installation of the theme you have to be running an updated version of WordPress. If this is your first time using WordPress and need help with that you may want to have a look at the Codex page for Installing WordPress: <a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a>. Don't worry, it should be really easy.</p>
+				<p>Also, you may want to check out our <a href="http://quadroideas.com/video-training/" target="_blank">video training library</a> for the WordPress 101 series if you feel you need a little help getting into it.</p>
+
+				<h4 id="installing-theme">Installing Modules Theme</h4>
+				<p><strong>Important notice: The file you downloaded from Themeforest contains both the theme and some other files you may find useful as the Documentation file and the licenses. That is not the file you should upload to install the theme. Instead, extract it with a software like UnRarX or Winzip, and then you'll find inside it a smaller file called modules-v.x.x.x.zip (with the appropriate version number). That's the file you'll want for the installation.</strong></p>
+				<p>There are two steps required in order to install a WP theme: uploading and activating. For uploading it, you have two options:</p>
+				<p><i>Upload through WordPress:</i> From the WP menu go to Appearance &raquo; Themes, select the tab "Install themes" and click on "Upload". Then, choose the Modules.zip folder contained in the folder you downloaded from QuadroIdeas.com.</p>
+				<p><i>Upload through FTP:</i> Unzip the modules.zip folder and upload only the theme folder using your preferred FTP client into the wp-content/themes at your domain.</p>
+				<p>Once you have uploaded the theme to your server click "Activate" it.</p>
+				<p><strong>Note: When you update your theme from the admin Dashboard, any custom modification you may have done to the theme's files (if you did any) will get replaced for the new updated files. Please keep a copy of those modified files or, much better, <a href="http://quadroideas.com/using-a-child-theme-in-wordpress/" title="Child Themes">make your own customizations in a child theme</a>. This does not apply to the Theme Options and WordPress settings. If you didn't touch the theme's files you don't need to worry about it.</strong></p>
+
+				<h4 id="license-activation">License & Typekit Activation</h4>
+				<p>In order to get automattic updates right on your WordPress dashboard, and to enable the Typekit font included with the theme you will need to activate its license. To do that, please navigate to <a href="http://quadroideas.com/account">http://quadroideas.com/account</a> where you will be prompted to register your purchased theme (you will need to create an account if you don't have one yet, it's all free).</p>
+				<p>Once your theme is registered in QuadroIdeas site, the theme is ready to connect and activate the license. Navigate to Theme Options >> General tab and in the lower part of the page fill in your QuadroIdeas credentials and your new License ID for the "THEME UPDATES & LICENSE" area. Please note that this License ID <em>is not</em> your Themeforest purchase key, but the one you'll get when you register the theme.</p>
+				<p>When your details are saved, you can simply go to Theme Options >> Typography tab and after selecting "Typekit" from the available options, click on "Activate Typekit". It will populate your Typekit options with a Typekit kit ID specially created for your theme install, and the font will be automatically used on your site.</p>
+				<p><em>* Note: an active theme license is required in order for the Typekit kit to work. QuadroIdeas's licenses last for a whole year every time.</em></p>
+
+				<h4 id="installing-plugins">Installing Plugins</h4>
+				<p>Besides any other plugin you may want to use or may be using right now in your WordPress install, Modules requires one extra plugin to work as expected which is the Portfolio Type plugin, which enables the portfolio item type and ensures you'll keep your portfolio items even after you switch themes (if you ever come to do that).</p>
+				<p>Once you activate the theme you'll see a yellowish banner asking you to install that plugin. Please, install it, and -if it does not happen automatically- activate it too.</p>
+				<p>Note: you absolutely don't need this plugin if you don't plan on using the Portfolio functionality that comes with Modules Theme. If that's your case, you can dismiss that notice and go on with your work without it.</p>
+				<p>In addition, Modules includes full support for several recommended plugins. It is not required from you to you install them, but if you want to, go ahead. You'll enjoy them big time! By the way, you don't need to do it right now if you are not sure. You can go, later on, to Appearance &raquo; Getting Started and install them from there.</p>
+
+				<h4 id="setup-menus">Setting up Menus</h4>
+				<p>To activate your menus, go to Appearance &raquo; Menus.<br />Create a menu adding your selected pages to the right column on the screen, and order them as you want. Give the menu a name, save it, and then define a "location" for it clicking on the "Manage Locations" tab. The location you'll need to supply at least right now is "Primary Menu". Also, if you'd prefer it, as of WordPress 4.3 menus can be handled in WordPress Customizer.</p>
+
+				<p>You'll find an option later to display the menu in several ways (mainly its closed position represented by the menu icon by default or to display it as an open static one). Whatever the option you choice, keep in mind that if the window gets smaller the closed-icon menu will be used anyway.</p>
+
+				<h4 id="defining-homepage">Defining a Homepage</h4>
+				<p>Unless you want your homepage to load your latest posts by default, you'll want to define a page to be the homepage, which later you'll modify to suit your needs.</p>
+				<p>Navigate to Settings &raquo; Reading and for "Front page displays" select "A static page". Then, select any page you have created to be your homepage. You can use the regular template or any other template you prefer for it.</p>
+
+				<h4 id="setup-blog">Setting up a Blog</h4>
+				<p>You have two options to create a blog on your site. The first one, as explained in the previous point, is to navigate to Settings &raquo; Reading and for "Front page displays" select "Your latest posts". This will show your blog posts in the homepage of your site automatically by using what WordPress calls the "archive template". To display your blog on a different page other than the homepage, select "A static page" instead of "Your latest posts". You will then be able to chose a page to be your front page, and then a different page to hold your posts on the "Posts page" option below.</p>
+				<p>You can also pick your blog and archives style, between a masonry (kind of a grid style), a more classic one, a teasers one and a headlines one (just as with the blog) and adjust many other settings for its layout at Appearance >> Theme Options, on Layout tab.</p>
+				<p>The amount of posts a specific blog page will show before the navigation is defined on the Settings >> Reading page, with the "Blog pages show at most" option.</p>
+				
+				<h5>Creating a Blog Through Modules</h5>
+				<p>Modules comes packed with modules you can set on any page by using a template called "Modular Template". By using it, you can pick from many different kind of modules, which will bring content in a particular layout and style. Between those modules, you'll find a very complete blog module, which you can combine with the rest of your page content to create a fully functional blog section inside a complex layout.</p>
+				<p>To do that, navigate to Modules >> Add new, select the Blog type for the module, and then add it into a new or existing page using the Modular Template (more on that in the <a href="#modules" title="Modules Section">Modules Section</a>).</p>
+
+				<h5>Archives</h5>
+				<p>In WordPress, an Archive is a collection of posts, grouped by a particular common denominator (which can be its author, a category, a tag, a post format, etc.). You don't need to perform any action to make them work. WordPress will automatically show an archive when a category, tag or author link is clicked.</p>
+				<p>With Modules you have the ability to display a term description right next to the term title in any archive. Search engines like Google love archives and they love archives which they can categorize and describe. So, showing this description can be very valuable regarding SEO efforts.</p>
+				<p>To display a description for a particular term, all you have to do is fill in that description in the proper field. For that, navigate to Posts >> Categories, or Posts >> Tags and complete the "Description" field. It will not only be useful for your readers and for search engine optimization, it will also make that archive page look super slick.</p>
+
+				<h5>User Contact Methods</h5>
+				<p><strong>PRO TIP: For author archives, a nice author box is shown before the posts displaying the author's gravatar, bio, contact methods and a cool cover image. To enable public contact methods for your users, navigate to Theme Options >> Social tab and complete the contact methods you'd like to make available in the "User Contact Methods" section. If you then navigate to Users >> Your Profile you'll see those profile fields, added below the native Website field, and a setting for the "Author Page Cover Image". That information gets shown with a nice icon every time the author box appear (both in the archives and below single posts, if you enable that in Theme Options >> Layout tab) so if you use those social networks on a daily basis you may want to fill those fields up to allow for your readers to reach your profiles too.</strong></p>
+
+				<h4 id="importing-demos">Importing a Demo</h4>
+				<p>Modules comes with many demo content mini sites ready to be imported into your WordPress install. That means you can create a fully working site in minutes. Remember you will need to replace the imported content after you do that, for your own, and that includes the images too (images on the demos do not get imported to avoid server overweight on your newly created WordPress install.</p>
+				<p>To install a demo:</p>
+				<ul>
+					<ol>
+						<li>Navigate to Theme Options >> General Tab</li>
+						<li>Locate the OPTIONS & CONTENT area</li>
+						<li>Click on "Open Demo Content Importer"</li>
+						<li>Browse through the available demo packs and click on "Install this Pack" when you've found the one you want</li>
+						<li>Wait for the process to complete</li>
+					</ol>
+				</ul>
+				<p><strong>Remember this will override your current theme options with the ones on the selected Demo Pack. This will not override your WordPress content in any way. Your posts and pages will remain just the same with the addition of the newly imported ones.</strong></p>
+
+			</div>
+
+			<div id="theme-options">
+				
+				<h3>Theme Options Panel</h3>
+
+				<h4 id="options-overview">Overview</h4>
+				<p>Next we'll cover the general set of options Modules offers. These options are theme wide and define most of the theme functioning. Remember to save each tab before you go on to the next one, otherwise your changes won't be saved. Alternatively, you can use the reset button to restore each tab to its defaults.</p>
+				<p>To begin, navigate to Appearance &raquo; Theme Options.</p>
+
+				<h4 id="general">General Options</h4>
+				<p><strong>The Branding section</strong> controls the logo/title display for the site's header, the about text, the favicon, and the custom login screen image. Is desirable that you upload logo images both for regular ratio screens and both for retina screens (twice as big as the regular ones, or up to three times their sizes for some new high resolution devices).</p>
+				<p><strong>The Miscellaneous section</strong> controls the display of the 404 Error page, the loading of Retina scripts and the "Back to top" functionality, both of which you can enable or disable. Disabling the scripts if you won't use those functionalities may improve loading times a little. Remember that disabling the Retina script means that newer images that you upload to WordPress won't get cropped accordingly, so you may want to plan that in advance.<br />Breadcrumbs controls are present in this section too, which let you show or hide them on your site's pages, and allow for a custom prefix too.<br />Also here, you can disable or enable the Back to Top functionality and the Transients Cache.</p>
+				<p><strong>The User/Login Menu section</strong> enables a login link placement on the header of the site, which you can point to whatever page you want to include your login form in (also very handy to point to WooCommerce's My Account page if you are using the e-commerce plugin.</p>
+				<p>Once the user has logged in, the same link can be used to display an expandable custom menu. For that, navigate to Appearance >> Menus and create your desired menu. Then, navigate to the Manage Locations tab inside the Menus screen and select that menu for the "User/Login Menu" location.</p>
+				<p>To display a Logout link inside the User/Login Menu (once the user is logged in), make sure you have created a new menu (at Appearance >> Menus) and defined it for the User/Login Menu option in Appearance >> Menus >> Manage Locations. You can then enable this addition by selecting "Show" for the "Logout Link in User Menu" option.</p>
+				<p><strong>Options & Content</strong> presents three important features.<br />The Demo Content Import provides you with a button that will import demo-like-content as you saw on Modules's demos online. You don't actually need to do this, but it can help you see things working if you are just starting with WordPress themes. Remember it'll replace your options and add lots of content to your site. In addition, it's a great way of handling projects much faster. You can simply install one of the demos, replace its content, and move on.</p>
+				<p>Backup Options let you backup and restore your whole set of Theme Options. Use it to save your current preferred set of options just before you start tweaking things to see if there is a scheme you like better. The restore button will restore your options to the last backup you made.<br />The Export Options function provides you with a piece of text (that weird looking text) that contains your whole Theme Options settings as for the time you loaded that page (if you changed something if won't get reflected there unless you update your settings). You can paste that piece of text in another Modules install to transfer your settings exactly as you have them here. (From a local install to an online one, for example.)</p>
+				<p><strong>Update Section:</strong> In this area you can fill in your QuadroIdeas.com username, password and license which will allow you to get notified about new updates for the theme right at your WordPress Dashboard, and update it right from there with a simple click. Don't forget to enter your details in there and keep your theme always up to date.</p>
+				<p><strong>Note: When you update your theme from the admin Dashboard, any custom modification you may have done to the theme's files (if you did any) will get replaced for the new updated files. Please keep a copy of those modified files or, much better, make your own customizations in a child theme. This does not apply to Theme Options and WordPress settings. If you didn't touch the theme's files you don't need to worry about it.</strong></p>
+
+				<h4 id="layout">Layout Options</h4>
+				<p>Inside the Layout Options you'll find:</p>
+
+				<ul>
+					<li>A layout setting for the site's STRETCHED/BOXED version.</li>
+					<li>The header options, with 16 different header layouts (for both full width headers and side headers), social icons options and the ability to show or hide the search field in it. You can also select here if you want to display a small widgetized area in the header. If you do, please keep in mind that is indeed a small area and it will cause the widgets to collapse vertically if too many things are inside it.<br />Also in this section, you'll find a control to enable a sticky menu in the way of a pit bar.</li>
+					<li>The style (masonry/classic/teasers/headlines) and number of columns for the blog view (two/three).</li>
+					<li>Masonry Margins controls to add a little spacing margin between masonry blogs and archives.</li>
+					<li>Post Loading Animation: only active in masonry blogs and archives.</li>
+					<li>A sidebar control for blog and archives that will hide or show the sidebar named "Sidebar" on your blog and archives pages. It is important to remember that this setting won't control sidebars on blogs created by putting together blog modules and wrapper modules with sidebar. If you are creating your blog in that way, make sure your archive's look matches the one you are creating for your blog.</li>
+					<li>Sidebar controls for single posts view.</li>
+					<li>Author Box control to show a little author box at the end of every post (this author box uses the author's gravatar, bio, and contact methods that you can set by navigating to Users >> Your Profile).</li>
+					<li>Footer options: Controls the footer widgetized area, its layout, the social icons, the copyright section, and its colors.</li>
+					<li>The sidebar section let's you create as many different sidebars as you want to be used on different pages. Please remember to avoid using spaces when completing the sidebar's slug, and also, know that the main sidebar for this theme's slug is "main-sidebar" so avoid using that slug in order to eliminate any collision.</li>
+				</ul>
+
+				<h4 id="design">Design Options</h4>
+				<p>On the Design Options tab:</p>
+
+				<ul>
+					<li>Background options: You can pick a background color, a background pattern or even upload an image to use it as site background.</li>
+					<li>Custom CSS: Use this box to add any CSS rules you need over the theme. These will not get modified on "Reset", but they will be replaced when importing options or restoring backups.</li>
+				</ul>
+
+				<h4 id="typography">Typography Options</h4>
+				<p>You can select here fonts for the different sections of the theme. It is advisable to choose no more than one or two different external fonts (such as those from Google Fonts) to improve loading times.</p>
+
+				<h5>Headings and Body typography.</h5>
+				<p>The <strong>Font Selection</strong> option lets you choose between three different typography schemes.</p>
+
+				
+				<p><strong>Google Fonts / </strong>There are two options here worth explaining with a little more detail. The Weight options, and the Subset options.</p>
+				<h5>Font Weight</h5>
+				<p>When we load fonts from Google fonts we only request specific font weights in order to minimize browser and bandwidth resources. The default font weights that get requested are 'normal' and 'bold', which are 400 and 700 respectively. For that, the setting on the field looks like this:</p>
+				<code>
+					:normal, bold
+				</code>
+				<p>You can bring only a specific weight if you'd like to, like this:</p>
+				<code>
+					:300
+				</code>
+				<p>Or bring many, like this:</p>
+				<code>
+					:300, normal, bold, 800
+				</code>
+				<p>Just be sure that those font weights exist on the font set you are requesting by browsing the Google fonts archive and looking into each font.</p>
+
+				<h5>Font Subset</h5>
+				<p>Also, there are certain languages which will need a whole different set of characters in order to display their words. That's what the Subset option is for. If you are writing in English, Spanish, French, German and so, you won't probably need that. In case you know your language needs for a font subset to be called for, just add that with a semi-colon before the subset name. For example, for Cyrillic subsets add this in the subset field:</p>
+				<code>
+					:cyrillic
+				</code>
+
+				<p class="typekit-activation"><strong>Typekit License Kit - Custom Kit</strong> / Modules theme license includes one full year of <a href="https://typekit.com/fonts" target="_blank">Typekit</a> typography service, with Proxima Nova: a premium font already selected to be used with the theme. To activate it, you need to do a couple of things.</p>
+
+				<ul>
+					<li>1. Register your theme at <a href="http://quadroideas.com/account/" target="_blank">QuadroIdeas.com</a></li>
+					<li>2. Enter your QuadroIdeas.com details at the General tab in Theme Options</li>
+					<li>3. Over Theme Options >> Typography, select Typekit for Font Selection, and then click on Activate Typekit. Should be that easy.</li>
+				</ul>
+
+				<p>If you are already using Typekit, or if you want to use a different Typekit kit, you can replace the auto populated data in those fields with your own Typekit Kit ID, and font families for headings and body copy.</p>
+
+				<p>Also, in this settings page:</p>
+				<ul>
+					<li>Colors for: links and link hover.</li>
+					<li>Font sizes for: body, site title.</li>
+					<li>Custom font upload: if you need to use a special font not included in Google Fonts you can upload it here. Pick whether you want to use it for your logo, for your headings, or both.</li>
+				</ul>
+
+				<h4 id="social">Social Options</h4>
+				<p>Fill in the accounts for each social network icon you want to display on the site's header or footer. Then, select the set of colors for each social section. Hint: choose the branded version if you want each icon to be on the color of its network. You can select here, also, whether to open those links in a new (_blank) tab or in the same one (_self).</p>
+				<h5>User Contact Methods</h5>
+				<p>The contact methods you enable here, by adding them one by one, get enabled to be used by autors on your whole WordPress install. Make sure you use the exact name of the social network if it is one, so that the icon for it gets automatically located.</p>
+
+				<h4 id="advertising">Advertising Options</h4>
+				<p>Modules has its own simple advertising control panel, and comes also ready to work with any regular Advertising plugin.</p>
+				<p>In Theme Options >> Advertising you will find a section for every available ad location in the theme layout.</p>
+				<ul>
+					<li>On Header</li>
+					<li>On Single Post - Before Title</li>
+					<li>On Single Post - After Title</li>
+					<li>On Single Post - Before Content</li>
+					<li>On Single Post - After Content</li>
+					<li>On Single Post - Inside Content</li>
+				</ul>
+				<p><strong>To use it on its own:</strong> Inside each section you can upload and link an image for your banner, enable/disable the ad banner, and also set its target. Select "Self" to open each link on the same browser's tab. Select "Blank" to open the link on a new browser's tab.</p>
+				<p><strong>To integrate with an advertising plugin:</strong> In addition of the custom functionality of the plugin you might be using, most advertising plugins provide you with shortcodes you can copy and paste wherever you choose to display a particular banner or group of banners.</p>
+				<p>Here is a recommendation for a free advertising plugin, available on the WordPress plugins repository which works pretty solid and has a nice variety of options: <a href="https://wordpress.org/plugins/simple-ads-manager" target="_blank" title="Simple Ads Manager Plugin">Simple Ads Manager</a></p>
+				<p>If you have ads defined in your advertising plugin, grab the shortcode for each of the ads you want to use, and paste it on the "Ad Shortcode" field for each of the advertising locations in the theme. <strong>Be aware: every shortcode in those fields will override any custom banner you manually uploaded for each section.</strong></p>
+				<h5>Advertising Widgets</h5>
+				<p>In addition, Modules comes packed with two Advertising Widgets that can be used in any widgetized area across the theme (i.e. different sidebars, footer, content created with Page Builder plugin, etc.). Those two plugins appear as "Quadro Ads (1 column)" and "Quadro Ads (2 columns)" with the only difference between them being that any banners you use on the second one, will display in a two columns layout.</p>
+				<ul>
+					<li>Title: Set the title for the widget <em>(optional)</em></li>
+					<li>Ad Spots: Define how many ads you want for this widget</li>
+					<li>Controls for Ad Spot
+						<ul>
+							<li>Image Ad Upload</li>
+							<li>Image Ad Link</li>
+							<li>Image Ad Link Target</li>
+							<li>Ad Shortcode <em>(use this option to paste a shortcode from any advertising plugin)</em></li>
+						</ul>
+					</li>
+				</ul>
+				<h5>A Useful Tips:</h5>
+				<p>The recommended image size for the header banner is 728px by 90px. For banners on two-columns widgets, images should be square shaped, and all of them in the same size.</p>
+				<p>Keep in mind that if you are creating layouts with the Page Builder plugin, these widgets can be used combined with the rest of your content to create specific-inside-content ad locations, and they can even be used on a Canvas module to add advertising locations between different modules on the Modular Template.</p>
+
+				<h4 id="portfolio">Portfolio Options</h4>
+				<p><strong>Portoflio Slug</strong> / The portfolio slug option lets you define what you want to appear in the URL bar before your item's name. It could be anything, just pick something without spaces (you can use "-" or "_") and without any special symbol. Remember to flush permalinks after you save this option.</p>
+				<p><strong>View all items</strong> / This setting allows for the placement of a "Back to all" link over the portfolio item. To use it just complete it with the URL you want it pointing to.</p>
+				<p><strong>Portfolio Data Fields</strong> / The data fields are custom fields you can use to showcase special information on your portfolio items. It could be the name of the client the project was for, the year, the price of an item or even the ingredients if you are using the portfolio as a restaurant menu. :) You create them here and then complete them in each portfolio item.</p>
+
+				<h4 id="woocommerce">WooCommerce Options</h4>
+				<p>Most of the options that define the behavior of the WooCommerce plugin still need to be set at the WooCommerce Settings pages. If you've never used WooCommerce before, start over there, and only then begin modifying what's described here.</p>
+				<p>There are two other areas that modify the way the plugin interacts with the theme, both in terms of functionality and in terms of design:</p>
+				<h5>Settings on Regular Pages</h5>
+				<p>WooCommerce uses many regular WordPress pages to display its content, such as the Cart page, the Checkout page, etc. In most cases you won't manually create those pages, as these get created automatically for you when you install the plugin and it asks for it. Regardless of that, those pages work as any other page in every "design" aspect. That means that you can (and should) manually define for them design and layout options as header background, template and style just as you do with any other page, to match the design and style of the whole site.</p>
+				<p><strong>The Page Template, Featured Image, and Page Options metaboxes apply for all of WooCommerce pages just as with any other page. Except for...</strong></p>
+				<h5>Shop Derived Pages and Single Products</h5>
+				<p>Some pages where WooCommerce display content aren't accessible from the Pages menu, as they are outputted by the plugin dynamically. That is the case of the the Catalog pages and every single product page.</p>
+				<p>For all of those pages, design options need to be set the "Shop" page and they will be common to all of them.</p>
+				<p>Also, at Theme Options >> WooCommerce you'll find settings for:</p>
+				<ul>
+					<li>Cart Icon on Header</li>
+					<li>Sidebar on Shop Page</li>
+					<li>Number of Items per Page in Shop Page</li>
+					<li>Number of Columns per Row in Shop Page</li>
+					<li>Number of Related Products Shown</li>
+					<li>My Account Intro</li>
+					<li>Login/Register Page Intro</li>
+				</ul>
+
+				<h4 id="other-options">Other Options</h4>
+				<p>In addition to the Theme Options, you'll find inside the post editor a small metabox called Post Header Options with fields that let you select the size of that post's header (from regular to big or giant), select the type of header background you'd like to use, and enable a dark overlay tone over your selected image (if that's what you are going with) to make reading text over it much more easier.</p>
+
+			</div>
+
+			<div id="modules">
+
+				<h3>Modules Modules</h3>
+
+				<h4 id="modules-overview">Overview</h4>
+				<p>Modules includes a super duper functionality that lets you build any page with the use of solid blocks of content we call... yeah, "Modules". They can be included and arranged in any order when using a Modular Template page template, and with 22 custom modules the amount of different things you can build is huge. You can even create your modules and think later on where you are going to use them, or even use one of them in multiple places across your site.</p>
+
+				<p>To add a module to a page:</p>
+				<ul>
+					<li>1. Create your desired modules.</li>
+					<li>2. Create a page, and choose Modular Template for its template option.</li>
+					<li>3. Add the desired modules in the Modules metabox for that page. </li>
+				</ul>
+
+				<p>Or...</p>
+				<ul>
+					<li>1. Create your desired modules.</li>
+					<li>2. From that module's edit page click on "Add this module to a page".</li>
+					<li>3. Add it, arrange it or remove it as desired.</li>
+				</ul>
+
+				<p>Each module has some general options in the <strong>Module Style tab</strong> (common to all modules) and some very specific ones. Define in each one if you want to display the title, pick the colors and the background, pick your preferred header layout and select whether you want to use the Fixed Background effect over your background (available for image backgrounds, of course).</p>
+
+				<p>To create a new module navigate to Modules &raquo; Add new. You select the type of module in the box that says "Module Type".<br />Now, one more little thing and then let's go over each one of them.</p>
+
+				<h4 id="modules-homepage">Creating a Homepage</h4>
+				<p>While there are infinite possible uses for these modules, one of the most recurrent ones if the creation of homepages. If you have already selected a specific page as a Static homepage in Settings &raquo; Reading, you can define its template to Modular Template and start throwing your modules in. You can create a very simple homepage with a slider and a blog, a showcase for your portfolio, a sales page with lots of copy or even a guided tour through your company.</p>
+
+				<h4 id="authors">Authors Module</h4>
+				<p>The Authors module displays a collection of the site's authors, and it gives you the possibility to choose between showing all authors, or just a specific selection of them, in any particular module. Next to each author's thumbnail you can display his/her bio, and the contact methods filled in in Users >> Your Profile.</p>
+				<p>Note: The image that gets shown for each author is its Gravatar. <a href="https://en.gravatar.com/" title="Get a Gravatar!">Visit this link for more information on how to get a Gravatar.</a></p>
+
+				<h4 id="blog-module">Blog Module</h4>
+				<p>The Blog module is useful to build a page with a blog on it, or but with added content too, such as a slogan, a special image above, a "sticky" featured post or another module too.</p>
+				<p>You have four Blog styles in this theme to choose from. The Masonry style, which brings a neat grid with all your posts, in a very visual way. The Classic style which brings your posts in full more classically, the Teasers style, which brings the post in a short version in a more magazine-like fashion and the Headlines style, which will bring a neat big image with the post's title. Pick also your desired loading animation for the posts (if any) and how many posts per page.</p>
+				<p>In addition, if you are using the Masonry style, you can select how many columns it will load into	, and set it to use margins between the posts, which will give the module a more "airy" feel.</p>
+				<p><strong>Posts Selection:</strong> Different posts selection methods are available for this module.</p>
+				<ul>
+					<li>All Posts: brings all the posts.</li>
+					<li>By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+
+				<h4 id="canvas">Canvas Module</h4>
+				<p>The Canvas module is simply an empty post-like-editor where you can throw anything you like. Text, images, embeds. Think of it as the ultimate free module you can later on position anywhere you want on your site.</p>
+				<p>Hint: If you combine a Canvas module with the SiteOrigin's Page Builder plugin (downloadable from the WordPress Plugin Repository) you can go crazy with the possibilities!</p>
+
+				<h4 id="carousel">Carousel Module</h4>
+				<p>The Carousel displays any amount of items in a carousel slider. You can chose to display them with or without margins (to make it full width). Selection methods apply as follows:</p>
+				<ul>
+					<li>All Posts: brings all the posts.</li>
+					<li>By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+
+				<h4 id="crelly-slider-module">Crelly Slider Module</h4>
+				<p>The Crelly Slider module has an input field for you to paste the shortcode for your Crelly Slider plugin (downloadable from the WordPress Plugin Repository). Just create a slider with the plugin and paste the shortcode in there.</p>
+
+				<h4 id="featured">Featured Post Module</h4>
+				<p>The Featured Post module brings a selected post and displays it in a fancy and stylish way. Whether it is a regular post, a video one, a gallery or of any other format, pick your preferred style and Modules will do it's magic with it.</p>
+				<p>Selection methods apply as follows:</p>
+				<ul>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Last Post: brings the last one, from between all the posts.</li>
+					<li>Last Post By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>Last Post By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+				<p>Post date and categories are available to show, and can be turned of in case of necessity.</p>
+
+				<h4 id="flash-news">Flash News Module</h4>
+				<p>The Flash News module displays a stripe shaped news bar, with your latest news, selected by post formats, posts categories or a custom selection (selection methods apply just as with the Blog or Carousel modules). A module title can be useful here to frame the news (ie: "Just Published:").</p>
+
+				<h4 id="image">Image Module</h4>
+				<p>The Image module grabs your module's Featured Image and showcases it in big size. Use it when you need just to present an image in a bold way, without much thinking.</p>
+
+				<h4 id="insights">Insights Module</h4>
+				<p>The Insights module let's you build what we call insights: a clear presentation of content with a title, an image, and -if you want to- a call to action. You can use it to list features, to present ideas, to showcase new products, etc.</p>
+				<p>Each insight can take the form of four possible layouts, accommodating the content on the left or the right side of the image, or above or below it. This module also has an option for text color and for a cute appearance animation on all insights.</p>
+
+				<h4 id="logos">Logos Roll</h4>
+				<p>The Logos Roll Module presents a series of logos (or any small image you can think of) with links (optional), both in multiple still columns layouts or in a carousel fashion.</p>
+
+				<h4 id="magazine">Magazine</h4>
+				<p>The Magazine module is a magazine styled collection of posts which you can portray in four different layouts and in two or three columns wide.</p>
+				<p>This module works great when combined with other posts collection modules to create a magazine homepage, or a pseudo magazine category page.</p>
+				<p><strong>What to show? - Posts Selection works as follows:</strong></p>
+				<ul>
+					<li>All Posts: brings all the posts.</li>
+					<li>By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+
+				<h4 id="portfolio-module">Portfolio</h4>
+				<p>The Portfolio module lets you choose between a Masonry, a grid style and a mosaic one, with margins or fullwidth layout, and in several columns options. You can also define for each portfolio module whether you want the items to open right there via Ajax or in a single post link. Hide or show the title for each item, the navigation filters and build your own list of items for each module (or bring them all or by categories).</p>
+				<p>Keep in mind that if you select to load the items on their own link (instead of the AJAX way) navigation will no longer be relative to the order the items appeared on the module, but on the natural WordPress order of "posts".</p>
+
+				<h4 id="quote-posts-slider">Quote Posts Slider</h4>
+				<p>This module presents a wide long slider pulling posts with Quote post format that rotates automatically. You can also build your query manually selecting specific quote posts, or bring them by a specific category. Text color is optional in case you can portray this posts over a contrasting background image or color.</p>
+
+				<h4 id="services">Services</h4>
+				<p>The Services modules features a list of items which you can display in three different layouts, and in a varying number of columns. Use them to display services, features, points of interests or ideas. You can bring many different sets of services to each Service module you create.</p>
+				<p>You can define colors and a loading animation for all of them, and -separatedly- add an image (or an icon), a link, text and a title.</p>
+
+				<h4 id="posts-slider-module">Posts Slider</h4>
+				<p>The Posts Slider module features a stylish slider custom made for Modules theme. You can display your posts in a big screen fashion with excerpts and titles on them and let them amaze your visitors. Choose between two caption layouts (Big caption or Striped caption) and combine them with three position styles.
+				<p>Options are available for transition timer, elements display, and margins settings which will make your slider full width if you'd like to.</p>
+				<p><strong>Posts Selection:</strong> Different posts selection methods are available for this module.</p>
+				<ul>
+					<li>All Posts: brings all the posts.</li>
+					<li>By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+
+				<h4 id="slider-module">Slider</h4>
+				<p>Similiar to the Posts Slider module, the Slider module presents a specially created set of slides, each one with its own content, image and call to action button. You can create them and re order as wanted, with options for margin, transition timer and height for the whole module.</p>
+				<p>Note: Use the height field to set a preferred height for this module. To achieve a full-window-height effect, enter <strong>100vh</strong>, or enter any height in pixels for a specific one.</p>
+
+				<h4 id="slogan">Slogan Module</h4>
+				<p>The Slogan module can be a slogan, or a call to action, or even a quick welcome phrase. Enter your title and text in the editor, add a link if you want, and hit publish. It's a great way to make a nice phrase look amazing. </p>
+				<p>In addition, choose between a giant slogan style or a regular sized one, use up to two different call to action buttons and select a desired animation (if any) for it.</p>
+				<p>Note: By selecting a Gallery in the "Use Gallery Slider as Background" you can create an images slider background for the slogan automatically, while its contents remain still over it.</p>
+				<p><strong>Video Background:</strong> To add a video background to the Slogan module, upload your video files to the Media Library (you can do that directly while editing the module) and choose your available formats. Some modern browsers will play different formats, so it's better to upload your video in more than one format to assure better ods of your users having the proper codecs on their browsers.</p>
+
+				<h4 id="team">Team</h4>
+				<p>The Team module brings your created set of team members in many possible layouts (the members are added in each module). Create there as many members as you want, with a picture, personal data and social links.</p>
+
+				<h4 id="testimonials">Testimonials</h4>
+				<p>Add as many testimonials as you want and display one by one in a slider, or in columns, to let your visitors know you better.</p>
+
+				<h4 id="tiled-display">Tiled Display</h4>
+				<p>The Tiled Display module is a magazine styled collection of posts which you can present in five different layouts and with two margins settings.</p>
+				<p>This module works great when combined with other posts collection modules to create a magazine homepage, or a pseudo magazine category page.</p>
+				<p><strong>What to show? - Posts Selection works as follows:</strong></p>
+				<ul>
+					<li>All Posts: brings all the posts.</li>
+					<li>By Categories: will open a new selection box for specific posts categories to show</li>
+					<li>By Post Format: will open a new selection box for specific post formats to show</li>
+					<li>Custom Selection: will display a whole list of all published posts to choose from manually</li>
+					<li>Posts Offset: will pass over the specified amount of posts in the selection (won't work for Custom Selection).</li>
+					<li>Exclude Posts: will exclude the specified posts from selection (use by entering IDs separated by a comma).</li>
+				</ul>
+				<p>Note: To use layouts 1 or 3 large thumbnail size must be set on WordPress defaults of 1024 by 1024 pixels.</p>
+
+				<h4 id="video-posts-slider">Video Posts Slider</h4>
+				<p>This module presents a wide long slider pulling posts with Video post format that rotates automatically. You can also build your query by manually selecting specific video posts, or bring them by a specific category.</p>
+
+				<h4 id="modules-tabs">Modules Tabs</h4>
+				<p>The Modules Tabs module joins modules together by putting them on selectable tabs. Select the modules you want to use (each module will occupy one tab) order them as you want and then add the titles for each of the tabs below.</p>
+				<p>Keep in mind that reordering the tabs (the modules) won't automatically reorder their titles, so you'll have to manually check that out.</p>
+
+				<h4 id="modules-wrapper">Modules Wrapper</h4>
+				<p>The Modules Wrapper is a wrapper module (no pun intended) which serves basically one function: that is, to group modules together whether to be able to re order a large group of elements or to add a sidebar to its side.</p>
+				<p>This gets really helpful in the case you want to build a magazine style page with several modules containing posts collections, with a sidebar on their side. To do that, just build your modules query by using the provided select box, and choose a sidebar, together with its position (left or right). You can create specific sidebars for this use by navigating to Theme Options >> Layout.</p>
+
+			</div>
+
+			<div id="templates">
+
+				<h3>Page Templates</h3>
+				
+				<p>For any page you create in WordPress you can pick a template that matches your needs. You'll find the Template select field inside the Page Attributes metabox, at the right side of the page screen. Modules comes with 4 custom templates you can choose from.</p>
+
+				<h4 id="page-default">Default Template</h4>
+				<p>The default page template simply brings any content you enter to the page. Simple and nice. You can use the Featured Image WordPress option to show an image behind your page's title.</p>
+
+				<h4 id="left-sidebar">Left Sidebar</h4>
+				<p>Similar to the default page template, but with its sidebar located at the left side of the screen.</p>
+
+				<h4 id="fullwidth">Fullwidth Page</h4>
+				<p>Similar to the default page template, but with no sidebar, and with fullwidth content.</p>
+
+				<h4 id="modular-template">Modular Template</h4>
+				<p>Although the Modular Template template is one of the simplest ones, it is also one of the most powerful. It displays a list of all your created modules and lets you build your own set of modules for each page you want. Select them, order them and -if you want- set the page header to "Hide", to use it as a homepage. It'll bring them one after the other in neat harmony. ;)</p>
+				<p>Modules includes now a built in cache system based on transients for the Modular Template. For improved performance, enable that option by navigating to Theme Options >> General, and setting "Transients Cache Enable" to "Enabled".</p>
+				<p><strong>Please note that this option will work as a cache for all matters when displaying modules. If you are showing different things based on particular logged-in users either on your modules or on a sidebar used with the Modules Wrapper module, keep this option disabled.</strong></p>
+
+				<h4 id="page-settings">Page Settings</h4>
+				<p>Other than setting the desired template for the page you are creating, you have the option to add a featured image to any page by clicking in the "Set featured image" link inside the Featured Image box. An uploaded Featured Image will be cropped and used then as a background image for the page header, where the title resides.</p>
+				<p>If you need to adjust the page title color to make it more visible, or if you just want to give your page a more personal style, you can pick a color for the title by using the "Title color" field you'll find in the Add new/Edit page screen.</p>
+
+			</div>
+
+			<div id="page-styling">
+
+				<h3>Page Styling</h3>
+				<p>Regardless of the page template you are using, when creating a new page, or when editing one, you will find a set of options right below the content editor for the next settings:</p>
+
+				<ul>
+					<li>Sidebar select - Specific for this page.</li>
+					<li>Breadcrumbs show or hide.</li>
+					<li>Title and header background colors.</li>
+					<li>Header background image option.</li>
+					<li>Page Tagline controls: this will let you show a sub-title below the page title.</li>
+					<li>Page background image control.</li>
+				</ul>
+
+			</div>
+
+			<div id="posts-styling">
+
+				<h3>Posts Styling</h3>
+				<p>There are two features you can make use of when writing a post regarding its styling.</p>
+
+				<h4>Featured Images</h4>
+				<p>The first one, WordPress native and perhaps more obvious if you have already worked with WordPress in the past, is the Featured Image box. By uploading an image through the Featured Image box you are giving the post a visual way of representation across the whole theme (whether it is in the blog view, a recent posts widget or any other way of posts displaying). Specifically, the featured image will get two important uses. First, it'll be cropped to sit automatically and nicely below the post header on the single view. Second, it'll be the image shown next to the post in the Masonry Blog layout, and also in the Classic one.</p>
+
+				<h4>Post Header Options</h4>
+				<p>Choose here the size of the post's header, the background and its text color. Use the Dark Overlay feature if your image is clear and you want the text above it to draw more attention (AKA be readable).</p>
+			
+			</div>
+
+			<div id="post-formats">
+				
+				<h3>Post Formats</h3>
+
+				<p>Post formats, introduced in WordPress since version 3.1, is a feature that allows you to specify what the post content is about and Modules is ready to make that content look great. You can choose the format for your post on the right side of the post editing screen.</p>
+
+				<p>You can actually use any kind of content for any kind of post, and even compose a Standard post (the most common one) full of videos and galleries, but if you really want to see Modules's magic, pick the right kind of post and let the theme display its content in a gorgeous way to feature what you really want to show on each post.</p>
+
+				<p>With future compatibility in mind, Modules does not use any custom fields to grab the data from your posts, just figures out what you intended to add and uses it. Also, it does not matter where you put your special content inside the post, just create and let the theme handle the work for you.</p>
+
+				<p>For <strong>Video posts</strong> and <strong>Audio posts</strong> you generally embed your content by pasting the URL of the chosen media (YouTube or Vimeo, for example) and hitting enter on your keyboard after that line. In the blog view, video posts with videos from YouTube or Vimeo will use an automatic video screenshot if no Featured image gets added to the post.</p>
+
+				<p>For <strong>Gallery posts</strong> you add your images through the Add media button above the content editor, and once there create a gallery, order your images and insert the gallery into the post.</p>
+
+				<p>The <strong>Image post</strong> uses the image you uploaded as Featured image, so don't forget to add that one if you want your image to be bold and nice.</p>
+
+				<p>The <strong>Aside post</strong>, <strong>Status post</strong>, <strong>Quote post</strong>, and <strong>Link post</strong> handle the content in a very simple way. Enter whatever you have to say and that's it. Don't forget that if you are adding a link post you should actually have the link in your content (you can create it with the link-chain button in the content editor of WordPress).</p>
+
+			</div>
+
+			<div id="widgets">
+				
+				<h3>Widgets</h3>
+
+				<p>These cute and neat widgets come with this theme as a gift. They are available for you at your Widgets screen, in the Appearance menu. :)</p>
+
+				<h4 id="image-widget">Quadro Image Widget</h4>
+				<p>The Image widget is simply a widget that lets you easily add an image to your widget area. Fill in a URL for your file or click the "Upload Image" button and hit Save. That's it, a nice image in your widget. :)</p>
+
+				<h4 id="recent-widget">Quadro Recent Posts Widget</h4>
+				<p>This widget displays a list of recent posts from your posts list, next to its respective thumbnails (using the Featured Image for each post). If the post doesn't have a Featured Image it'll show a default thumbnail icon. You can set how many posts to show in the list.</p>
+
+				<h4 id="featured-widget">Quadro Featured Post Widget</h4>
+				<p>This widget displays a selected post from your posts list, nicely integrated with its thumbnail (using the Featured Image on size "medium" for each post). If the post doesn't have a Featured Image it'll show a default thumbnail image, but it probably won't look as nice as when it does have an image. This is clearly a more visual widget.</p>
+
+				<h4 id="video-widget">Quadro Video Widget</h4>
+				<p>The Quadro Video widget lets you include a video from any of the common social video sites (Youtube, Vimeo, Blip.tv, etc.) into your widgets area. Just paste in your video URL and it'll accommodate to show up always nicely and at the correct size.</p>
+
+				<h4 id="quadro-ads-widget">Quadro Ads Widget</h4>
+				<p>Modules comes packed with two Advertising Widgets that can be used in any widgetized area across the theme (i.e. different sidebars, footer, content created with Page Builder plugin, etc.). Those two plugins appear as "Quadro Ads (1 column)" and "Quadro Ads (2 columns)" with the only difference between them being that any banners you use on the second one, will display in a two columns layout.</p>
+				<ul>
+					<li>Title: Set the title for the widget <em>(optional)</em></li>
+					<li>Ad Spots: Define how many ads you want for this widget</li>
+					<li>Controls for Ad Spot
+						<ul>
+							<li>Image Ad Upload</li>
+							<li>Image Ad Link</li>
+							<li>Image Ad Link Target</li>
+							<li>Ad Shortcode <em>(use this option to paste a shortcode from any advertising plugin)</em></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+
+			<div id="plugins">
+				
+				<h3>Supported Plugins</h3>
+				<p>We've chosen a group of WordPress plugins we think you will find very useful in your everyday WordPress work, and added special support for them, making sure they display and fit nicely within the overall design of the theme. That does not mean other plugins won't look nice when using them on Modules, nor it talks about how those plugins perform. Other plugins will look as great as they are built, always. It just means we've styled these plugin's components according to the rest of the theme so you can install them and activate them and never wonder whether they will look fine or not.</p>
+
+				<h4 id="page-builder-plugin">Page Builder by SiteOrigin</h4>
+				<p>Available on the WordPress plugins repository, Page Builder is a free plugin "to create responsive column layouts using the widgets you know and love". With it you'll be able to structure your content in many columns and rows you need and place inside them neat elements such as: galleries, buttons, call to actions, videos, testimonials, price boxes and more. You can also use the native WordPress widgets and the nice Quadro Ideas widgets that come with the theme.</p>
+				<p>We also recommend you to install the SiteOrigin Widgets Bundle to get even more elements to insert inside your content, like: posts carousel, features/services, customizable buttons and call to actions, prices table and sliders. The second great thing about this is that you can also use these widgets in regular widgetized areas all over your site.</p>
+				<p><strong>Important Note:</strong> Each different post type needs to be enabled for the Page Builder plugin in order to be able to use it in them. Make sure you are enabling the post types you want to use the plugin with by navigating to Settings >> SiteOrigin Page Builder and checking the proper checkboxes. We specially recommend checking "Posts", "Pages" and "Modules", though you can enable those you want.</p>
+
+				<h4 id="mega-menus-plugin">CF Mega Menu</h4>
+				<p>This plugin by Crowd Favorite and available on GitHub lets you create visual enhanced menus with "post styled" content on them, assignable to any menu item.</p>
+				<p>Once you activate it, navigate to Mega Menus >> Add New, and create there the layout and content for your menu. Then, to add this mega menu to a menu item, go to Appearance >> Menus, open one of your menu items as if you were to edit its details, and select your recently created mega menu from the Mega Menu select box.</p>
+				<p><strong>EXTRA TIP:</strong> You can use the page builder to create mega menus layouts too. In order to do that, you will first need to enable them. Navigate to Settings >> Page Builder, select Mega Menus on the checkboxes, and Save Settings.</p>
+				<p><strong>EXTRA TIP 2:</strong> We have included in the theme <strong>5 prebuilt layouts for Page Builder and Mega Menus plugins</strong>. That's right. That means, a couple of clicks and you are good to go. To use them, after you've enabled the Mega Menus on the Page Builder settings, go to create a new Mega Menu, and click on the Page Builder tab above the editor. Then, click on the Prebuilt Layout button and choose one of the Theme Defined pre made layouts to import them onto your editor. Click Publish, and that's it.</p>
+
+				<h4 id="woocommerce-plugin">WooCommerce</h4>
+				<p>The WooCommerce plugin has come to be one of the most popular choices to build an online shop in WordPress. Regardless of what you try to sell, WooCommerce lets you setup an e-shop in matter of minutes, and start selling right away.</p>
+				<p>Modules is your ally in this process. Its WooCommerce-ready integration makes it even easier for you to install it and move on with the rest of your site, while the theme takes care of the styling and the layout to make them one with the whole design. Please refer to <a href="#woocommerce" title="Modules's WooCommerce Options">Modules's WooCommerce options</a> for more information on that.</p>
+				<p>You can download WooCommerce for free from the WordPress plugins repository or install it right away by navigating to Plugins >> Add New and typing WooCommerce in the Search Box.</p>
+
+				<h4 id="contact-form-plugins">Contact Form Plugins</h4>
+				<p>Whether it's a simple contact form or that you're looking to build a more complex form for your website, these tools will be the best choice for you. Modules supports the amazing Contact Form 7 and Gravity Forms plugins. Choose the one you like the most and create custom contact forms for your site. They're both really great and solid and you can use them in pages, posts or insert them inside a widget.</p>
+				<p>The Contact Form 7 is a free plugin that you can find in the WordPress repository. We recommend you using it to build simpler forms; it's really easy to implement and you can find the documentation guide here.</p>
+				<p>If you're looking to create an advanced form that can integrate with several popular web applications and online services but that's still easy to configure, then you can go for the Gravity Forms plugin. It has 3 types of licenses with different prices; you can choose the one that better fits your project and start right over.</p>
+
+				<h4 id="crelly-slider-plugin">Crelly Slider</h4>
+				<p>Available on the WordPress plugins repository, Crelly Slider is a free plugin to create amazing layered sliders. With it you'll be able to build your slides using images and text layers with custom animations. Then you can use the slider on a page or a post by pasting its shortcode inside the content wherever you want.</p>
+
+				<h4 id="jetpack-plugin">Jetpack</h4>
+				<p>Available on the WordPress plugins repository, Jetpack is the famous plugin made by the Automattic team. In their words: install Jetpack to "supercharge your self-hosted site with a suite of the most powerful WordPress.com features".
+				You'll find the plugin comes with a lot of add-ons you can enable for your website. We put a lot of thinking on trying to find those that can be really useful to you. These are the features that are specially supported by Modules that you can enjoy on your site:</p>
+				<ul>
+					<li>Tiled Galleries</li>
+					<li>Share buttons on posts</li>
+					<li>Related posts on posts</li>
+					<li>Jetpack widgets: Blog Subscriptions and Facebook Like Box</li>
+				</ul>
+
+			</div>
+
+			<div id="advanced">
+
+				<h3>Advanced Stuff</h3>
+				
+				<h4 id="action-hooks">Action Hooks</h4>
+				<p>Modules includes some action hooks you can make use of to modify (or interact with) specific parts of the theme. For a detailed explanation of working with hooks in WordPress please refer to the <a href="http://codex.wordpress.org/Plugin_API/Hooks" title="Hooks Documentation">hooks documentation</a> in the Codex.</p>
+				<p>Simply put, a "hook" is a little spot where you can literally hook specific actions or functions, to be run in certain parts of the site's run time without touching or modifying the template files for the theme. All the code can be added in your functions.php file inside a child theme and be kept ordered and safe from updates.</p>
+				<p>To add a function to a hook, just add it this way:</p>
+				<code>
+					add_action( 'the_hook_name', 'your_function_name' );
+					function your_function_name() {
+						// do stuff here
+					}
+				</code>
+
+				<h5>Available Theme Hooks</h5>
+
+				<dl>
+					<dt>qi_before_post</dt>
+					<dl><strong>Before Single Post Content Hook</strong> - Runs right at the beginning of the 'entry-content' div in single posts view, before the post's content is shown.</dl>
+					<dt>qi_after_post</dt>
+					<dl><strong>After Single Post Content Hook</strong> - Runs right before closing the 'entry-content' div in single posts view, after the post's content is shown.</dl>
+					<dt>qi_before_post_title</dt>
+					<dl><strong>Before Single Post Title Hook</strong> - Runs right before the title in single posts view.</dl>
+					<dt>qi_after_post_title</dt>
+					<dl><strong>After Single Post Title Hook</strong> - Runs right after the title in single posts view.</dl>
+				</dl>
+
+			</div>
+
+		</section>
+
+	</div>
+
+</body>
+</html>

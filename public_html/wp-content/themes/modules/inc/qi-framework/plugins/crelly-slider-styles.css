@@ -1,0 +1,86 @@
+.type-crelly-slider {
+	width: 100%;
+	min-height: 0;
+	padding: 0;
+}
+
+.crellyslider > .cs-slides > .cs-slide {
+	/*display: none;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;*/ /*Removed for new Crelly Slider plugin version (post 0.8.1)*/
+}
+
+.crellyslider > .cs-controls,
+.crellyslider > .cs-navigation {
+	z-index: 1;
+}
+
+.crellyslider > .cs-controls > .cs-next,
+.crellyslider > .cs-controls > .cs-previous {
+	width: 60px !important;
+	height: 60px !important;
+	margin-top: -30px !important;
+  	margin-bottom: auto !important;
+	/*background-image: none !important;*/
+	background: #000;
+	text-align: center !important;
+  	line-height: 60px !important;  	
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+}
+
+	.crellyslider > .cs-controls > .cs-next:before,
+	.crellyslider > .cs-controls > .cs-previous:before {
+		font-family: 'FontAwesome';
+		font-size: 20px;
+		color: #fff;
+		text-indent: 0;
+		float: left;
+		width: 100%;
+	}
+
+		.crellyslider > .cs-controls > .cs-previous:before {
+			content: "\f053";
+		}
+
+		.crellyslider > .cs-controls > .cs-next:before {
+			content: "\f054";
+		}
+
+.crellyslider > .cs-navigation > .cs-slide-link {
+	width: 80px;
+	height: 8px;
+	margin: 0 2px !important;
+	background: #000;
+	zoom: 1;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	margin: 0;
+	background-image: none;
+}
+
+.crellyslider > .cs-navigation > .cs-slide-link:hover,
+.crellyslider > .cs-navigation > .cs-slide-link.cs-active {
+	zoom: 1;
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.crellyslider > .cs-preloader > .cs-loader {
+	background-image: none;
+}
+
+.crellyslider > .cs-preloader > .cs-loader:before {
+	font-family: 'FontAwesome';
+	content: "\f110";
+	-webkit-animation: fa-spin 2s infinite linear;
+	animation: fa-spin 2s infinite linear;
+	font-size: 30px;
+	color: #fff;
+}
+
+.crellyslider > .cs-progress-bar {
+	z-index: 99;
+}

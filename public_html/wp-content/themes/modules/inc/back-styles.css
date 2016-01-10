@@ -1,0 +1,8 @@
+.layout-item.quadro_mod_magazine_layout-layout {
+	min-height: 130px;
+}
+
+/* We cancel this appearance because we have a Canvas Metabox */
+.qimodule-canvas #mod-metabox {
+	/*display: none;*/
+}
