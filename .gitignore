@@ -1,0 +1,6 @@
+.DS_Store
+.idea/
+.vagrant/
+nbproject/
+/public_html/wp-content/uploads/
+/public_html/wp-content/upgrade/
