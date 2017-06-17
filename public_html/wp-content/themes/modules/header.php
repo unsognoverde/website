@@ -5,6 +5,13 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-53F54FR');</script>
+<!-- End Google Tag Manager -->
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -69,6 +76,11 @@ $hide_header_class = '';
 
 <body <?php body_class('site-' . $site_layout . ' ' . $header_style . '-header ' . $header_layout . ' ' . $header_height . '-header ' . $transp_color . '-header ' . $sticky_header . '-header ' . $show_sidebar . '-' . $sidebar_pos . ' woo-sidebar-' . $quadro_options['woo_sidebar'] . ' woo-cols' . $quadro_options['woo_loop_columns']); ?>>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53F54FR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
 <?php if ( is_page() ) {
 	// Apply function for inline styles
 	quadro_page_styles( $page_id ); 
